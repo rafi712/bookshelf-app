@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 149, 237);
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.input_section {
+  margin: 70px auto 0;
+  padding: 30px;
+  background-color: #fff;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.input_section h2 {
+  margin-bottom: 10px;
+}
+
+.input_section form {
+  margin-top: 20px;
+}
+
+.input_section > form > .input {
+    margin: 10px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(100, 149, 237);
+    color: white;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button:hover {
+  background-color: #446ad4;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+
+
+.input_section > form > .input > label {
+    color: rgb(100, 149, 237);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(100, 149, 237);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.bookshelf-container {
+  margin: 70px auto 0;
+  max-width: 850px;
+  width: 80%; 
+  display: flex;
+  padding: 0 30px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book_shelf {
+  width: 50%;
+  margin-bottom: 25px;
+  height: fit-content;
+  padding: 20px;
+  background-color: rgba(100, 149, 237, 0.3);
+  border-radius: 10px;
+}
+
+.book_shelf h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.book_item {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+}
+
+.book_item > h3, p {
+  margin: 8px 0;
+}
+
+.text-author {
+  color: #c3c3c3;
+}
+
+.action {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+}
+
+.action button {
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.red {
+  background-color: #f44336;
+}
+
+.green:hover {
+  background-color: #196e2e;
+}
+
+.red:hover {
+  background-color: #a31717;
+}
+
+@media screen and (max-width: 513px) {
+  .input_section {
+    width: 90%;
+  }
+  
+  .bookshelf-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .book_shelf {
+    width: 100%;
+  }
+  
+  .action {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+}
